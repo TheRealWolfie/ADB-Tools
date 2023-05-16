@@ -1,4 +1,5 @@
 export exportPath=/external_sd/ROMbkp
+export blockPath=/dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name
 
 cd /
 
@@ -8,7 +9,8 @@ fi
 
 if [ ! -d $exportPath ];then
   mkdir -p $exportPath
-  ls /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name -1 > $exportPath/by-name.txt
+  #ls /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name -1 > $exportPath/by-name.txt
+  ls $blockPath -1 > $exportPath/by-name.txt
 else
   rm $exportPath/*.img
 fi
@@ -20,7 +22,8 @@ for i in $(cat $exportPath/by-name.txt); do
     echo "SRC: "
     echo "dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/$i"
     echo "RETURN: "
-    readlink -f /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/$i
+    #readlink -f /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/$i
+    readlink -f $blockPath/$i
     echo
     echo "Image has been saved to: $exportPath/$i.img"
     echo
