@@ -1,7 +1,21 @@
-*Useful XDA forum links:*
+## Android Development Tools
+This repo contains several useful tools and scripts to be used with various Android development activities.
 
-Port any Custom Rom for your Android Smart Phone.. Easy Steps!!!!
-https://forum.xda-developers.com/t/port-any-custom-rom-for-your-android-smart-phone-easy-steps.2284985/
+As an enthusiast and tinkerer with no formal background in porting roms to unofficial or unsupported devices, I decided to create this repo to share with anyone who might find it useful..
 
-[GUIDE][COMPLETE] Android ROM Development From Source To End
-https://forum.xda-developers.com/t/guide-complete-android-rom-development-from-source-to-end.2814763/
+With a lot of trial and error, I'm going to be adding more stuff to this repo as I continue with this learning adventure! :) 
+
+# External
+This folder contains vairous 3rd party modules, programs and utilities.
+
+# Scripts 
+This folder contains various useful scripts that i have found or created.
+
+# Tools
+This folder contains various tools that are needed whem working with Android
+
+# Windows Subsytem for Linux
+This folder contains various scripts to assist with setting up a WSL environment and more.
+
+# Documentation
+This folder contains various links to diferent reading and source materials
